@@ -3,4 +3,5 @@
     <string name="linear_layout_manager">Linear Layout Manager</string>
     <string name="horizontal">Horizontal</string>
     <string name="reverse_layout">Reverse Layout</string>
+    <string name="stack_from_end">Stack From End</string>
 </resources>
