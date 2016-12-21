@@ -2,16 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_horizontal_linear_layout_manager"
+    android:id="@+id/activity_reverse_layout_linear_layout_manager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.aya.recyclerview.HorizontalLinearLayoutManagerActivity">
+    tools:context="com.aya.recyclerview.ReverseLayoutLinearLayoutManagerActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
+        app:reverseLayout="true"
         app:layoutManager="LinearLayoutManager" />
 
 </RelativeLayout>
