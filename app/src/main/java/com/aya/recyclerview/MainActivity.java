@@ -13,10 +13,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setLinearLayoutManagerButton();
+        setHorizontalButton();
     }
 
     private void setLinearLayoutManagerButton() {
         Button button = (Button) findViewById(R.id.linear_layout_manager_button);
         button.setOnClickListener(view -> startActivity(new Intent(this, LinearLayoutManagerActivity.class)));
     }
+
+    private void setHorizontalButton() {
+        Button button = (Button) findViewById(R.id.horizontal_button);
+        button.setOnClickListener(view -> startActivity(new Intent(this, HorizontalLinearLayoutManagerActivity.class)));
+    }
+
 }
