@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setHorizontalButton();
         setReverseLayoutButton();
         setStackFromEndButton();
+        setGridLayoutManagerButton();
     }
 
     private void setLinearLayoutManagerButton() {
@@ -36,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
     private void setStackFromEndButton() {
         Button button = (Button) findViewById(R.id.stack_from_end_button);
         button.setOnClickListener(view -> startActivity(new Intent(this, StackFromEndLinearLayoutManagerActivity.class)));
+    }
+
+    private void setGridLayoutManagerButton() {
+        Button button = (Button) findViewById(R.id.grid_layout_manager_button);
+        button.setOnClickListener(view -> startActivity(new Intent(this, GridLayoutManagerActivity.class)));
     }
 
 }

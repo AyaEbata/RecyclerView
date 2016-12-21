@@ -19,6 +19,7 @@
         <activity android:name=".HorizontalLinearLayoutManagerActivity" />
         <activity android:name=".ReverseLayoutLinearLayoutManagerActivity" />
         <activity android:name=".StackFromEndLinearLayoutManagerActivity" />
+        <activity android:name=".GridLayoutManagerActivity" />
     </application>
 
 </manifest>

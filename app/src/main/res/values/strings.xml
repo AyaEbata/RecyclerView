@@ -4,4 +4,6 @@
     <string name="horizontal">Horizontal</string>
     <string name="reverse_layout">Reverse Layout</string>
     <string name="stack_from_end">Stack From End</string>
+
+    <string name="grid_layout_manager">Grid Layout Manager</string>
 </resources>
