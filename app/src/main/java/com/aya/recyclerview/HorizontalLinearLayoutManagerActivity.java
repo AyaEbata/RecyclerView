@@ -26,7 +26,7 @@ public class HorizontalLinearLayoutManagerActivity extends AppCompatActivity {
             data.add("Item: " + i);
         }
 
-        final SimpleAdapter adapter = new SimpleAdapter(data);
+        final RecyclerViewAdapter adapter = new RecyclerViewAdapter(data);
         recyclerView.setAdapter(adapter);
     }
 }

@@ -7,12 +7,12 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-public class SimpleAdapter extends RecyclerView.Adapter<ViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @NonNull
     public final List<String> data;
 
-    public SimpleAdapter(@NonNull List<String> data) {
+    public RecyclerViewAdapter(@NonNull List<String> data) {
         this.data = data;
     }
 
