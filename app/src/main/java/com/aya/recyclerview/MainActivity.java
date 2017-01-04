@@ -1,9 +1,12 @@
 package com.aya.recyclerview;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
+
+import com.annimon.stream.Stream;
+import com.aya.recyclerview.enums.MainButtonEnum;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,36 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setLinearLayoutManagerButton();
-        setHorizontalButton();
-        setReverseLayoutButton();
-        setStackFromEndButton();
-        setGridLayoutManagerButton();
+        setButton();
     }
 
-    private void setLinearLayoutManagerButton() {
-        Button button = (Button) findViewById(R.id.linear_layout_manager_button);
-        button.setOnClickListener(view -> startActivity(new Intent(this, LinearLayoutManagerActivity.class)));
-    }
-
-    private void setHorizontalButton() {
-        Button button = (Button) findViewById(R.id.horizontal_button);
-        button.setOnClickListener(view -> startActivity(new Intent(this, HorizontalLinearLayoutManagerActivity.class)));
-    }
-
-    private void setReverseLayoutButton() {
-        Button button = (Button) findViewById(R.id.reverse_layout_button);
-        button.setOnClickListener(view -> startActivity(new Intent(this, ReverseLayoutLinearLayoutManagerActivity.class)));
-    }
-
-    private void setStackFromEndButton() {
-        Button button = (Button) findViewById(R.id.stack_from_end_button);
-        button.setOnClickListener(view -> startActivity(new Intent(this, StackFromEndLinearLayoutManagerActivity.class)));
-    }
-
-    private void setGridLayoutManagerButton() {
-        Button button = (Button) findViewById(R.id.grid_layout_manager_button);
-        button.setOnClickListener(view -> startActivity(new Intent(this, GridLayoutManagerActivity.class)));
+    private void setButton() {
+        Stream.of(MainButtonEnum.values()).forEach(item -> {
+            Button button = (Button) findViewById(item.getId());
+            button.setOnClickListener(view -> startActivity(new Intent(this, item.getActivityClass())));
+        });
     }
 
 }

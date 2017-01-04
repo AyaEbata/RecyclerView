@@ -61,4 +61,14 @@
         android:layout_marginTop="14dp"
         android:id="@+id/grid_layout_manager_button" />
 
+    <Button
+        android:text="@string/divisible_by_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_layout_manager_button"
+        android:layout_alignLeft="@+id/stack_from_end_button"
+        android:layout_alignStart="@+id/stack_from_end_button"
+        android:layout_marginTop="14dp"
+        android:id="@+id/divisible_by_ten_button" />
+
 </RelativeLayout>
