@@ -21,6 +21,7 @@
         <activity android:name=".StackFromEndLinearLayoutManagerActivity" />
         <activity android:name=".GridLayoutManagerActivity" />
         <activity android:name=".DivisibleByTenGridLayoutManagerActivity" />
+        <activity android:name=".StaggeredGridLayoutManagerActivity" />
     </application>
 
 </manifest>
