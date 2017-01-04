@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class LinearLayoutManagerActivity extends AppCompatActivity {
 
@@ -22,9 +23,7 @@ public class LinearLayoutManagerActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         List<String> data = new ArrayList<>();
-        for (int i = 0; i < 30; i++) {
-            data.add("Item: " + i);
-        }
+        IntStream.rangeClosed(0, 30).forEach(i -> data.add("Item: " + i));
 
         final RecyclerViewAdapter adapter = new RecyclerViewAdapter(data);
         recyclerView.setAdapter(adapter);

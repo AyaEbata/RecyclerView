@@ -8,6 +8,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class DivisibleByTenGridLayoutManagerActivity extends AppCompatActivity {
 
@@ -27,9 +28,7 @@ public class DivisibleByTenGridLayoutManagerActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         List<String> data = new ArrayList<>();
-        for (int i = 0; i < 30; i++) {
-            data.add("Item: " + i);
-        }
+        IntStream.rangeClosed(0, 30).forEach(i -> data.add("Item: " + i));
 
         final RecyclerViewAdapter adapter = new RecyclerViewAdapter(data);
         recyclerView.setAdapter(adapter);
