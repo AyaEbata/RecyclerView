@@ -2,6 +2,7 @@ package com.aya.recyclerview.enums;
 
 import android.support.v7.widget.GridLayoutManager;
 
+import com.aya.recyclerview.DivisibleByTenGridLayoutManagerActivity;
 import com.aya.recyclerview.HorizontalLinearLayoutManagerActivity;
 import com.aya.recyclerview.LinearLayoutManagerActivity;
 import com.aya.recyclerview.R;
@@ -14,7 +15,8 @@ public enum MainButtonEnum {
     HORIZONTAL(R.id.horizontal_button, HorizontalLinearLayoutManagerActivity.class),
     REVERSE_LAYOUT(R.id.reverse_layout_button, ReverseLayoutLinearLayoutManagerActivity.class),
     STACK_FROM_END(R.id.stack_from_end_button, StackFromEndLinearLayoutManagerActivity.class),
-    GRID_LAYOUT_MANAGER(R.id.grid_layout_manager_button, GridLayoutManager.class);
+    GRID_LAYOUT_MANAGER(R.id.grid_layout_manager_button, GridLayoutManager.class),
+    DIVISIBLE_BY_TEN(R.id.divisible_by_ten_button, DivisibleByTenGridLayoutManagerActivity.class);
 
     private final int id;
     private final Class activityClass;
