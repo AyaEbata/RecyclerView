@@ -9,4 +9,6 @@
     <string name="divisible_by_ten">divisible by ten</string>
 
     <string name="staggered_grid_layout_manager">Staggered Grid Layout Manager</string>
+
+    <string name="divider_item_decoration">Divider Item Decoration</string>
 </resources>
