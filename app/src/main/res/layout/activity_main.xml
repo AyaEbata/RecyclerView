@@ -16,7 +16,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/linear_layout_manager_button"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
@@ -24,9 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear_layout_manager_button"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="50dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="14dp"
         android:id="@+id/horizontal_button" />
@@ -36,7 +33,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/horizontal_button"
-        android:layout_alignLeft="@+id/horizontal_button"
         android:layout_alignStart="@+id/horizontal_button"
         android:layout_marginTop="14dp"
         android:id="@+id/reverse_layout_button" />
@@ -46,7 +42,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/reverse_layout_button"
-        android:layout_alignLeft="@+id/reverse_layout_button"
         android:layout_alignStart="@+id/reverse_layout_button"
         android:layout_marginTop="14dp"
         android:id="@+id/stack_from_end_button" />
@@ -56,7 +51,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/stack_from_end_button"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="14dp"
         android:id="@+id/grid_layout_manager_button" />
@@ -66,7 +60,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/grid_layout_manager_button"
-        android:layout_alignLeft="@+id/stack_from_end_button"
         android:layout_alignStart="@+id/stack_from_end_button"
         android:layout_marginTop="14dp"
         android:id="@+id/divisible_by_ten_button" />
@@ -77,7 +70,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/staggered_grid_layout_manager_button"
         android:layout_below="@+id/divisible_by_ten_button"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:text="@string/divider_item_decoration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/divider_item_decoration_button"
+        android:layout_below="@+id/staggered_grid_layout_manager_button"
         android:layout_alignParentStart="true"
         android:layout_marginTop="14dp" />
 

@@ -22,6 +22,7 @@
         <activity android:name=".activities.GridLayoutManagerActivity" />
         <activity android:name=".activities.DivisibleByTenGridLayoutManagerActivity" />
         <activity android:name=".activities.StaggeredGridLayoutManagerActivity" />
+        <activity android:name=".activities.DividerItemDecorationActivity" />
     </application>
 
 </manifest>
