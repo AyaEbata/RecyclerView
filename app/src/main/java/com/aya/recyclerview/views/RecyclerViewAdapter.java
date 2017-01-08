@@ -5,8 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.aya.recyclerview.views.ViewHolder;
-
 import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
