@@ -1,9 +1,11 @@
-package com.aya.recyclerview;
+package com.aya.recyclerview.views;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import com.aya.recyclerview.views.ViewHolder;
 
 import java.util.List;
 

@@ -8,20 +8,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LinearLayoutManagerActivity" />
-        <activity android:name=".HorizontalLinearLayoutManagerActivity" />
-        <activity android:name=".ReverseLayoutLinearLayoutManagerActivity" />
-        <activity android:name=".StackFromEndLinearLayoutManagerActivity" />
-        <activity android:name=".GridLayoutManagerActivity" />
-        <activity android:name=".DivisibleByTenGridLayoutManagerActivity" />
-        <activity android:name=".StaggeredGridLayoutManagerActivity" />
+        <activity android:name=".activities.LinearLayoutManagerActivity" />
+        <activity android:name=".activities.HorizontalLinearLayoutManagerActivity" />
+        <activity android:name=".activities.ReverseLayoutLinearLayoutManagerActivity" />
+        <activity android:name=".activities.StackFromEndLinearLayoutManagerActivity" />
+        <activity android:name=".activities.GridLayoutManagerActivity" />
+        <activity android:name=".activities.DivisibleByTenGridLayoutManagerActivity" />
+        <activity android:name=".activities.StaggeredGridLayoutManagerActivity" />
     </application>
 
 </manifest>

@@ -1,19 +1,22 @@
-package com.aya.recyclerview;
+package com.aya.recyclerview.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 
+import com.aya.recyclerview.R;
+import com.aya.recyclerview.views.RecyclerViewAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class ReverseLayoutLinearLayoutManagerActivity extends AppCompatActivity {
+public class StackFromEndLinearLayoutManagerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reverse_layout_linear_layout_manager);
+        setContentView(R.layout.activity_stack_from_end_linear_layout_manager);
 
         setSimpleAdapter();
     }

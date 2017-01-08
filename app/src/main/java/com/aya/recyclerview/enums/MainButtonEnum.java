@@ -1,15 +1,13 @@
 package com.aya.recyclerview.enums;
 
-import android.support.v7.widget.GridLayoutManager;
-
-import com.aya.recyclerview.DivisibleByTenGridLayoutManagerActivity;
-import com.aya.recyclerview.GridLayoutManagerActivity;
-import com.aya.recyclerview.HorizontalLinearLayoutManagerActivity;
-import com.aya.recyclerview.LinearLayoutManagerActivity;
+import com.aya.recyclerview.activities.DivisibleByTenGridLayoutManagerActivity;
+import com.aya.recyclerview.activities.GridLayoutManagerActivity;
+import com.aya.recyclerview.activities.HorizontalLinearLayoutManagerActivity;
+import com.aya.recyclerview.activities.LinearLayoutManagerActivity;
 import com.aya.recyclerview.R;
-import com.aya.recyclerview.ReverseLayoutLinearLayoutManagerActivity;
-import com.aya.recyclerview.StackFromEndLinearLayoutManagerActivity;
-import com.aya.recyclerview.StaggeredGridLayoutManagerActivity;
+import com.aya.recyclerview.activities.ReverseLayoutLinearLayoutManagerActivity;
+import com.aya.recyclerview.activities.StackFromEndLinearLayoutManagerActivity;
+import com.aya.recyclerview.activities.StaggeredGridLayoutManagerActivity;
 
 public enum MainButtonEnum {
 
