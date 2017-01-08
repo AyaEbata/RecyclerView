@@ -5,9 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import com.annimon.stream.Stream;
 import com.aya.recyclerview.R;
 import com.aya.recyclerview.enums.MainButtonEnum;
+
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setButton() {
-        Stream.of(MainButtonEnum.values()).forEach(item -> {
+        Arrays.stream(MainButtonEnum.values()).forEach(item -> {
             Button button = (Button) findViewById(item.getId());
             button.setOnClickListener(view -> startActivity(new Intent(this, item.getActivityClass())));
         });
