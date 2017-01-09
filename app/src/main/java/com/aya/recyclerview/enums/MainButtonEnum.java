@@ -5,6 +5,7 @@ import com.aya.recyclerview.activities.DividerItemDecorationActivity;
 import com.aya.recyclerview.activities.DivisibleByTenGridLayoutManagerActivity;
 import com.aya.recyclerview.activities.GridLayoutManagerActivity;
 import com.aya.recyclerview.activities.HorizontalLinearLayoutManagerActivity;
+import com.aya.recyclerview.activities.ItemClickActivity;
 import com.aya.recyclerview.activities.LinearLayoutManagerActivity;
 import com.aya.recyclerview.R;
 import com.aya.recyclerview.activities.ReverseLayoutLinearLayoutManagerActivity;
@@ -21,7 +22,8 @@ public enum MainButtonEnum {
     DIVISIBLE_BY_TEN(R.id.divisible_by_ten_button, DivisibleByTenGridLayoutManagerActivity.class),
     STAGGERED_GRID_LAYOUT_MANAGER(R.id.staggered_grid_layout_manager_button, StaggeredGridLayoutManagerActivity.class),
     DIVIDER_ITEM_DECORATION(R.id.divider_item_decoration_button, DividerItemDecorationActivity.class),
-    CHANGE_LINE_COLOR(R.id.change_line_color_button, ChangeLineColorDividerItemDecorationActivity.class);
+    CHANGE_LINE_COLOR(R.id.change_line_color_button, ChangeLineColorDividerItemDecorationActivity.class),
+    ITEM_CLICK(R.id.item_click_button, ItemClickActivity.class);
 
     private final int id;
     private final Class activityClass;

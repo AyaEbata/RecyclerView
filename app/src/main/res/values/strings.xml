@@ -12,4 +12,6 @@
 
     <string name="divider_item_decoration">Divider Item Decoration</string>
     <string name="change_line_color">Change Line Color</string>
+
+    <string name="item_click">Item Click</string>
 </resources>
