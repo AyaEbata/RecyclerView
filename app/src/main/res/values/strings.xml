@@ -11,4 +11,5 @@
     <string name="staggered_grid_layout_manager">Staggered Grid Layout Manager</string>
 
     <string name="divider_item_decoration">Divider Item Decoration</string>
+    <string name="change_line_color">Change Line Color</string>
 </resources>
