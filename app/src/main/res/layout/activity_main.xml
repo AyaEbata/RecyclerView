@@ -1,95 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main2"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.aya.recyclerview.activities.MainActivity">
 
-    <Button
-        android:text="@string/linear_layout_manager"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linear_layout_manager_button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
 
-    <Button
-        android:text="@string/horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linear_layout_manager_button"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="14dp"
-        android:id="@+id/horizontal_button" />
+        <Button
+            android:text="@string/linear_layout_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_layout_manager_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="@string/reverse_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/horizontal_button"
-        android:layout_alignStart="@+id/horizontal_button"
-        android:layout_marginTop="14dp"
-        android:id="@+id/reverse_layout_button" />
+        <Button
+            android:text="@string/horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout_manager_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/horizontal_button" />
 
-    <Button
-        android:text="@string/stack_from_end"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/reverse_layout_button"
-        android:layout_alignStart="@+id/reverse_layout_button"
-        android:layout_marginTop="14dp"
-        android:id="@+id/stack_from_end_button" />
+        <Button
+            android:text="@string/reverse_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontal_button"
+            android:layout_alignStart="@+id/horizontal_button"
+            android:layout_marginTop="14dp"
+            android:id="@+id/reverse_layout_button" />
 
-    <Button
-        android:text="@string/grid_layout_manager"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/stack_from_end_button"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="14dp"
-        android:id="@+id/grid_layout_manager_button" />
+        <Button
+            android:text="@string/stack_from_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reverse_layout_button"
+            android:layout_alignStart="@+id/reverse_layout_button"
+            android:layout_marginTop="14dp"
+            android:id="@+id/stack_from_end_button" />
 
-    <Button
-        android:text="@string/divisible_by_ten"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/grid_layout_manager_button"
-        android:layout_alignStart="@+id/stack_from_end_button"
-        android:layout_marginTop="14dp"
-        android:id="@+id/divisible_by_ten_button" />
+        <Button
+            android:text="@string/grid_layout_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stack_from_end_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp"
+            android:id="@+id/grid_layout_manager_button" />
 
-    <Button
-        android:text="@string/staggered_grid_layout_manager"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/staggered_grid_layout_manager_button"
-        android:layout_below="@+id/divisible_by_ten_button"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="14dp" />
+        <Button
+            android:text="@string/divisible_by_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid_layout_manager_button"
+            android:layout_alignStart="@+id/stack_from_end_button"
+            android:layout_marginTop="14dp"
+            android:id="@+id/divisible_by_ten_button" />
 
-    <Button
-        android:text="@string/divider_item_decoration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/divider_item_decoration_button"
-        android:layout_below="@+id/staggered_grid_layout_manager_button"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="14dp" />
+        <Button
+            android:text="@string/staggered_grid_layout_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/staggered_grid_layout_manager_button"
+            android:layout_below="@+id/divisible_by_ten_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp" />
 
-    <Button
-        android:text="@string/change_line_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/change_line_color_button"
-        android:layout_below="@+id/divider_item_decoration_button"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="14dp" />
+        <Button
+            android:text="@string/divider_item_decoration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/divider_item_decoration_button"
+            android:layout_below="@+id/staggered_grid_layout_manager_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp" />
 
-</RelativeLayout>
+        <Button
+            android:text="@string/change_line_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/change_line_color_button"
+            android:layout_below="@+id/divider_item_decoration_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:text="@string/item_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_click_button"
+            android:layout_below="@+id/change_line_color_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp" />
+
+    </RelativeLayout>
+</ScrollView>

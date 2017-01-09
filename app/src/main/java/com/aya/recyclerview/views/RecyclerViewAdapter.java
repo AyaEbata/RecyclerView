@@ -16,10 +16,22 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
         this.data = data;
     }
 
+    protected void onItemClicked(String text) {
+        // 個々の呼び出しで実装
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         final LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        return ViewHolder.create(inflater, parent);
+        final ViewHolder holder = ViewHolder.create(inflater, parent);
+
+        holder.itemView.setOnClickListener(view -> {
+            final int position = holder.getAdapterPosition();
+            final String text = data.get(position);
+            onItemClicked(text);
+        });
+
+        return holder;
     }
 
     @Override
