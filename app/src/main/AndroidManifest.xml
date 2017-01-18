@@ -25,6 +25,7 @@
         <activity android:name=".activities.DividerItemDecorationActivity" />
         <activity android:name=".activities.ChangeLineColorDividerItemDecorationActivity" />
         <activity android:name=".activities.ItemClickActivity" />
+        <activity android:name=".activities.NotifyActivity" />
     </application>
 
 </manifest>

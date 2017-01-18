@@ -8,6 +8,7 @@ import com.aya.recyclerview.activities.HorizontalLinearLayoutManagerActivity;
 import com.aya.recyclerview.activities.ItemClickActivity;
 import com.aya.recyclerview.activities.LinearLayoutManagerActivity;
 import com.aya.recyclerview.R;
+import com.aya.recyclerview.activities.NotifyActivity;
 import com.aya.recyclerview.activities.ReverseLayoutLinearLayoutManagerActivity;
 import com.aya.recyclerview.activities.StackFromEndLinearLayoutManagerActivity;
 import com.aya.recyclerview.activities.StaggeredGridLayoutManagerActivity;
@@ -23,7 +24,8 @@ public enum MainButtonEnum {
     STAGGERED_GRID_LAYOUT_MANAGER(R.id.staggered_grid_layout_manager_button, StaggeredGridLayoutManagerActivity.class),
     DIVIDER_ITEM_DECORATION(R.id.divider_item_decoration_button, DividerItemDecorationActivity.class),
     CHANGE_LINE_COLOR(R.id.change_line_color_button, ChangeLineColorDividerItemDecorationActivity.class),
-    ITEM_CLICK(R.id.item_click_button, ItemClickActivity.class);
+    ITEM_CLICK(R.id.item_click_button, ItemClickActivity.class),
+    NOTIFY(R.id.notify_button, NotifyActivity.class);
 
     private final int id;
     private final Class activityClass;
