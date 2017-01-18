@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 
 import com.aya.recyclerview.R;
-import com.aya.recyclerview.utils.ActivityUtil;
+import com.aya.recyclerview.utils.ItemUtil;
 import com.aya.recyclerview.views.RecyclerViewAdapter;
 
 public class GridLayoutManagerActivity extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class GridLayoutManagerActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
 
-        final RecyclerViewAdapter adapter = new RecyclerViewAdapter(ActivityUtil.getItemList());
+        final RecyclerViewAdapter adapter = new RecyclerViewAdapter(ItemUtil.getList());
         recyclerView.setAdapter(adapter);
     }
 

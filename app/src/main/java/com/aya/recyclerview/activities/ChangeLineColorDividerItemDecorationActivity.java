@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 
 import com.aya.recyclerview.R;
-import com.aya.recyclerview.utils.ActivityUtil;
+import com.aya.recyclerview.utils.ItemUtil;
 import com.aya.recyclerview.views.DividerDecoration;
 import com.aya.recyclerview.views.RecyclerViewAdapter;
 
@@ -25,7 +25,7 @@ public class ChangeLineColorDividerItemDecorationActivity extends AppCompatActiv
 
         setDividingLine(recyclerView);
 
-        final RecyclerViewAdapter adapter = new RecyclerViewAdapter(ActivityUtil.getItemList());
+        final RecyclerViewAdapter adapter = new RecyclerViewAdapter(ItemUtil.getList());
         recyclerView.setAdapter(adapter);
     }
 
