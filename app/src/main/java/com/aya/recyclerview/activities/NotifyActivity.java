@@ -2,19 +2,25 @@ package com.aya.recyclerview.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.aya.recyclerview.R;
 import com.aya.recyclerview.utils.ItemUtil;
 import com.aya.recyclerview.views.RecyclerViewAdapter;
 
-public class DividerItemDecorationActivity extends AppCompatActivity {
+import java.util.List;
+import java.util.Random;
+
+public class NotifyActivity  extends AppCompatActivity {
+
+    RecyclerViewAdapter adapter;
+    List<String> itemList = ItemUtil.getList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_divider_item_decoration);
+        setContentView(R.layout.activity_notify);
 
         setSimpleAdapter();
     }
@@ -23,14 +29,11 @@ public class DividerItemDecorationActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
 
-        setDividingLine(recyclerView);
-
-        final RecyclerViewAdapter adapter = new RecyclerViewAdapter(ItemUtil.getList());
+        adapter = new RecyclerViewAdapter(itemList);
         recyclerView.setAdapter(adapter);
     }
 
-    private void setDividingLine(RecyclerView recyclerView) {
-        recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+    public void onClickAddButton(View view) {
+        adapter.insert("Added Item", new Random().nextInt(itemList.size()));
     }
-
 }

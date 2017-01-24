@@ -14,4 +14,7 @@
     <string name="change_line_color">Change Line Color</string>
 
     <string name="item_click">Item Click</string>
+
+    <string name="notify">Notify**</string>
+    <string name="add">add</string>
 </resources>
