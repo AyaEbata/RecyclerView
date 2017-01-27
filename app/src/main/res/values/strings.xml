@@ -17,4 +17,6 @@
 
     <string name="notify">Notify**</string>
     <string name="add">add</string>
+
+    <string name="header_footer">Header Footer</string>
 </resources>

@@ -125,5 +125,15 @@
             android:id="@+id/notify_button"
             android:onClick="onClickNotifyButton"/>
 
+        <Button
+            android:text="@string/header_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notify_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp"
+            android:id="@+id/header_footer_button"
+            android:onClick="onClickHeaderFooterButton"/>
+
     </RelativeLayout>
 </ScrollView>
