@@ -19,4 +19,6 @@
     <string name="add">add</string>
 
     <string name="header_footer">Header Footer</string>
+    <string name="header">Header</string>
+    <string name="footer">Footer</string>
 </resources>

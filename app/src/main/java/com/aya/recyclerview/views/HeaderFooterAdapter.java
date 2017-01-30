@@ -64,10 +64,10 @@ public class HeaderFooterAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) { // TODO じゃないメモ 描画するときに呼ばれる
         if (holder instanceof ViewHolder) {
             final ViewHolder viewHolder = (ViewHolder) holder;
-            final String text = data.get(position);
+            final String text = data.get(position - 1);
             viewHolder.textView.setText(text);
         }
     }
