@@ -59,4 +59,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, NotifyActivity.class));
     }
 
+    public void onClickHeaderFooterButton(View view) {
+        startActivity(new Intent(this, HeaderFooterActivity.class));
+    }
+
 }
